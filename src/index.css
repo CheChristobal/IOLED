@@ -42,15 +42,20 @@ body {
   text-align: left;;
 }
 
-.calore {
+
+.caloreRojo {
   height:100px;
   text-align:center;
+  font-size: 20px;
   padding:50px;
+  color: red;
   
 }
 
-.calore2 {
+.caloreVerde {
   height:100px;
+  font-size: 60px;
   text-align:center;
   padding:50px;
+  color: green;
 }

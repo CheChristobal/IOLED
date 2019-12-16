@@ -45,7 +45,10 @@ function valueLabelFormat(value) {
   return marks.findIndex(mark => mark.value === value) + 1;
 }
 
+
+
 export default function Slide() {
+   
   const classes = useStyles();
   const getAriaValueText={valuetext}
 

@@ -7,26 +7,24 @@ const useStyles = makeStyles(theme => ({
   container: {
     //display: 'flex',
     flexWrap: 'wrap',
-    alingitems: 'center',
   },
   textField: {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
     width: 200,
-    alingitems: 'center',
   },
 }));
 
-export default function Timer() {
+export default function TimePickers() {
   const classes = useStyles();
 
   return (
     <form className={classes.container} noValidate>
       <TextField
-        id="time" 
-        label="Tiempo"
+        id="time"
+        label="Alarm clock"
         type="time"
-        defaultValue="00:00"
+        defaultValue="07:30"
         className={classes.textField}
         InputLabelProps={{
           shrink: true,

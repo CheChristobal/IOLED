@@ -7,26 +7,34 @@ import Slider from './components/Slider';
 import Calor from './components/Calor';
 
 class App extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.handleChange = this.handleChange.bind(this);
+      }
+    
+      handleChange(e) {
+        this.props.onTemperatureChange(e.target.value);
+      }
+    
    render(){
-      
+        const valuetext = this.props.valuetext;
+
        return (
         <div className="todo">
             <h1 className="title">
-                <Tittle />
+                <Tittle/>
             </h1>
             <div>
                 <Slider/>
             </div>
-            <div className="calore">
-                <Calor/>
+            <div >
+                <Calor onChange={this.handleChange}/>
             </div>
             <div className="timer">
                 <h2>
                 <Timer/>
                 </h2>
-            </div>
-            <div className="calore2">
-                <Calor/>
             </div>
         </div>
        );

@@ -5,6 +5,8 @@ import './index.css';
 import Timer   from './components/Timer';
 import Slider from './components/Slider';
 import Calor from './components/Calor';
+import Calore from './components/Slider'
+
 
 class App extends React.Component {
 
@@ -26,10 +28,10 @@ class App extends React.Component {
                 <Tittle/>
             </h1>
             <div>
-                <Slider/>
+                <Slider />
             </div>
             <div >
-                <Calor onChange={this.handleChange}/>
+                <Calor />
             </div>
             <div className="timer">
                 <h2>

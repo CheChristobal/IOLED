@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
+
 
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
 
 import '../index.css'
+
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -47,8 +50,9 @@ function valueLabelFormat(value) {
 
 
 
-export default function Slide() {
+ export default function Slide(){
    
+  
   const classes = useStyles();
   const getAriaValueText={valuetext}
 
@@ -61,7 +65,7 @@ export default function Slide() {
       <h1>
           
       </h1>
-      <Slider
+      <Slider 
         defaultValue={30}
         getAriaValueText={valuetext}
         aria-labelledby="discrete-slider"

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
@@ -22,7 +21,7 @@ export default function TimePickers() {
     <form className={classes.container} noValidate>
       <TextField
         id="time"
-        label="Alarm clock"
+        label="Timer"
         type="time"
         defaultValue="00:00"
         className={classes.textField}

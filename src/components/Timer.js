@@ -21,7 +21,7 @@ export default function TimePickers() {
     <form className={classes.container} noValidate>
       <TextField
         id="time"
-        label="Timer"
+        label="Tiempo"
         type="time"
         defaultValue="00:00"
         className={classes.textField}
